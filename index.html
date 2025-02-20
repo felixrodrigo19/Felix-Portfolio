@@ -3,207 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe - Backend Engineer</title>
-    <style>
-        :root {
-            --primary-color: #2d3436;
-            --secondary-color: #0984e3;
-            --light-bg: #f5f6fa;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
-        }
-
-        body {
-            line-height: 1.6;
-            color: var(--primary-color);
-        }
-
-        .navbar {
-            padding: 1rem 5%;
-            background: white;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            position: fixed;
-            width: 100%;
-            top: 0;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--primary-color);
-            font-weight: 500;
-        }
-
-        .hero {
-            padding: 8rem 5% 4rem;
-            background: var(--light-bg);
-            text-align: center;
-        }
-
-        .section {
-            padding: 4rem 5%;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 3rem;
-            color: var(--secondary-color);
-        }
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .project-card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .tech-pill {
-            display: inline-block;
-            padding: 0.3rem 0.8rem;
-            background: var(--light-bg);
-            border-radius: 20px;
-            font-size: 0.9rem;
-            margin: 0.5rem 0.3rem;
-        }
-
-        .timeline-item {
-            border-left: 2px solid var(--secondary-color);
-            padding-left: 2rem;
-            margin-bottom: 2rem;
-            position: relative;
-        }
-
-        .timeline-item::before {
-            content: '';
-            width: 15px;
-            height: 15px;
-            background: var(--secondary-color);
-            position: absolute;
-            left: -8.5px;
-            top: 0;
-            border-radius: 50%;
-        }
-
-        footer {
-            background: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 2rem 5%;
-        }
-    </style>
+    <title>Rodrigo Felix - Backend Engineer</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<nav class="navbar">
+    <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-    <section class="hero">
-        <h1>John Doe</h1>
-        <p>Backend Engineer specializing in distributed systems and high-performance applications</p>
-        <div style="margin-top: 1rem;">
-            <span class="tech-pill">Java</span>
-            <span class="tech-pill">Python</span>
-            <span class="tech-pill">Go</span>
-            <span class="tech-pill">AWS</span>
-            <span class="tech-pill">Kubernetes</span>
-        </div>
-    </section>
+<section class="hero">
+    <h1>Rodrigo dos Santos Felix</h1>
+    <p>Backend Engineer specializing in designing and implementing scalable systems.</p>
+    <div class="tech-pills">
+        <span class="tech-pill">Java</span>
+        <span class="tech-pill">Python</span>
+        <span class="tech-pill">Go</span>
+        <span class="tech-pill">AWS</span>
+        <span class="tech-pill">Kubernetes</span>
+    </div>
+</section>
 
-    <section id="projects" class="section">
-        <h2 class="section-title">Technical Projects</h2>
-        <div class="projects-grid">
-            <!-- Java Project -->
-            <div class="project-card">
-                <h3>Distributed Task Scheduler</h3>
+<section id="projects" class="section">
+    <h2 class="section-title">Technical Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>Spring Boot Microservices</h3>
+            <div class="tech-pills">
                 <span class="tech-pill">Java</span>
                 <span class="tech-pill">Spring Boot</span>
-                <span class="tech-pill">RabbitMQ</span>
-                <p>Built a fault-tolerant task scheduling system using Spring Boot and RabbitMQ, achieving 99.9% uptime</p>
+                <span class="tech-pill">Service Discovery</span>
+                <span class="tech-pill">Kubernetes</span>
             </div>
+            <p>A study project to explore microservices architecture, focusing on designing and implementing scalable
+                payment and order microservices.</p>
+            <a href="https://github.com/felixrodrigo19/spring-boot-micro-services" target="_blank" class="repo-link">
+                <i class="fab fa-github"></i> View Repository
+            </a>
+        </div>
 
-            <!-- Python Project -->
-            <div class="project-card">
-                <h3>ML Pipeline Framework</h3>
+        <div class="project-card">
+            <h3>Ambrosia Serve</h3>
+            <div class="tech-pills">
                 <span class="tech-pill">Python</span>
-                <span class="tech-pill">Apache Airflow</span>
-                <span class="tech-pill">Docker</span>
-                <p>Developed a scalable machine learning pipeline handling 1M+ daily transactions</p>
+                <span class="tech-pill">Kubernetes</span>
+                <span class="tech-pill">DDD</span>
+                <span class="tech-pill">Clean Architecture</span>
             </div>
-
-            <!-- Go Project -->
-            <div class="project-card">
-                <h3>High-Frequency Trading API</h3>
-                <span class="tech-pill">Go</span>
-                <span class="tech-pill">gRPC</span>
-                <span class="tech-pill">Redis</span>
-                <p>Created low-latency trading API achieving 50μs response times under load</p>
-            </div>
+            <p>A scalable REST API designed to support a rapidly growing neighborhood snack bar by streamlining order
+                management.</p>
+            <a href="https://github.com/PostechSOAT2024Grupo40/ambrosia-serve" target="_blank" class="repo-link">
+                <i class="fab fa-github"></i> View Repository
+            </a>
         </div>
-    </section>
 
-    <section id="experience" class="section">
-        <h2 class="section-title">Professional Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>Senior Backend Engineer - Tech Corp (2020-Present)</h3>
-                <ul>
-                    <li>Led migration of legacy monolith to microservices architecture</li>
-                    <li>Designed API gateway handling 50K RPM</li>
-                    <li>Implemented CI/CD pipeline reducing deployment time by 40%</li>
-                </ul>
+        <div class="project-card">
+            <h3>Mushroom Classification: Edible vs. Poisonous</h3>
+            <div class="tech-pills">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Machine Learning</span>
+                <span class="tech-pill">Scikit-Learn</span>
+                <span class="tech-pill">Data Preprocessing</span>
             </div>
-
-            <div class="timeline-item">
-                <h3>Backend Developer - StartupX (2017-2020)</h3>
-                <ul>
-                    <li>Developed core banking system processing $1B+ transactions</li>
-                    <li>Optimized database queries reducing latency by 65%</li>
-                </ul>
-            </div>
+            <p>A machine learning project to classify mushrooms as edible or poisonous based on their
+                characteristics.</p>
+            <a href="https://github.com/felixrodrigo19/Cogumelos" target="_blank" class="repo-link">
+                <i class="fab fa-github"></i> View Repository
+            </a>
         </div>
-    </section>
 
-    <section id="education" class="section">
-        <h2 class="section-title">Education</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>MSc Computer Science - MIT (2015-2017)</h3>
-                <p>Thesis: "Optimizing Consensus Algorithms in Distributed Systems"</p>
+        <div class="project-card">
+            <h3>Ambrosia-serve: Kubernetes Infrastructure</h3>
+            <div class="tech-pills">
+                <span class="tech-pill">Kubernetes</span>
+                <span class="tech-pill">Infrastructure as Code</span>
+                <span class="tech-pill">CI/CD</span>
+                <span class="tech-pill">DevOps</span>
             </div>
-
-            <div class="timeline-item">
-                <h3>BSc Software Engineering - Stanford (2011-2015)</h3>
-                <p>Coursework: Algorithms, Distributed Systems, Database Design</p>
-            </div>
+            <p>Kubernetes infrastructure for Ambrosia-serve, a modern order management system designed to improve
+                customer experience.</p>
+            <a href="https://github.com/PostechSOAT2024Grupo40/ambrosia-serve-k8s" target="_blank" class="repo-link">
+                <i class="fab fa-github"></i> View Repository
+            </a>
         </div>
-    </section>
 
-    <footer id="contact">
-        <h3>Get in Touch</h3>
-        <p>Email: john.doe@example.com</p>
-        <p>LinkedIn: linkedin.com/in/johndoe</p>
-        <p>GitHub: github.com/johndoe</p>
-    </footer>
+        <div class="project-card">
+            <h3>Authenticator Service: AWS Cognito & Lambda</h3>
+            <div class="tech-pills">
+                <span class="tech-pill">AWS Cognito</span>
+                <span class="tech-pill">AWS Lambda</span>
+                <span class="tech-pill">Terraform</span>
+                <span class="tech-pill">Serverless</span>
+            </div>
+            <p>A secure authentication service built using AWS Cognito for user management and AWS Lambda for serverless
+                functions.</p>
+            <a href="https://github.com/PostechSOAT2024Grupo40/authenticator" target="_blank" class="repo-link">
+                <i class="fab fa-github"></i> View Repository
+            </a>
+        </div>
+
+        <div class="project-card">
+            <h3>Terraform-managed RDS PostgreSQL on AWS</h3>
+            <div class="tech-pills">
+                <span class="tech-pill">Terraform</span>
+                <span class="tech-pill">AWS RDS</span>
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">Infrastructure as Code</span>
+            </div>
+            <p>A project to provision and manage an AWS RDS PostgreSQL database using Terraform.</p>
+            <a href="https://github.com/PostechSOAT2024Grupo40/database" target="_blank" class="repo-link">
+                <i class="fab fa-github"></i> View Repository
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="experience" class="section">
+    <h2 class="section-title">Professional Experience</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <h3>Senior Backend Engineer - Tech Corp (2020-Present)</h3>
+            <ul>
+                <li>Led migration of legacy monolith to microservices architecture</li>
+                <li>Designed API gateway handling 50K RPM</li>
+                <li>Implemented CI/CD pipeline reducing deployment time by 40%</li>
+            </ul>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Backend Developer - StartupX (2017-2020)</h3>
+            <ul>
+                <li>Developed core banking system processing $1B+ transactions</li>
+                <li>Optimized database queries reducing latency by 65%</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="education" class="section">
+    <h2 class="section-title">Education</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <h3>MSc Computer Science - MIT (2015-2017)</h3>
+            <p>Thesis: "Optimizing Consensus Algorithms in Distributed Systems"</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>BSc Software Engineering - Stanford (2011-2015)</h3>
+            <p>Coursework: Algorithms, Distributed Systems, Database Design</p>
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <h3>Get in Touch</h3>
+    <p>
+        <a href="mailto:felixs.rodrigo@gmail.com" target="_blank" class="repo-link">
+            <i class="fab fa-mail-reply-all"></i> Email: felixs.rodrigo@gmail.com
+        </a>
+    </p>
+    <p>
+        <a href="https://linkedin.com/in/rodrigosfelix" target="_blank" class="repo-link">
+            <i class="fab fa-linkedin"></i> LinkedIn: linkedin.com/in/rodrigosfelix
+        </a>
+    </p>
+    <p>
+        <a href="https://github.com/felixrodrigo" target="_blank" class="repo-link">
+            <i class="fab fa-github"></i> GitHub: github.com/felixrodrigo19
+        </a>
+    </p>
+</footer>
 </body>
 </html>
